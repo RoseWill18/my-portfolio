@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', 'Helvetica', sans-serif
   line-height: 1.6;
   color: #333;
 }
@@ -98,25 +98,40 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/portfolio bg.jpg");
+  background-image: url("./Image_20240927_030049_228.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.laptop-container {
+.catch-phrase {
   position: absolute;
+  background-color: rgba(255, 235, 205, 0.3); /* Semi-transparent blanchedalmond */
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px); /* Added standard property for better browser support */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+
+  font-size: 4rem; /* Responsive font size */
+  font-weight: 600; /* Semi-bold for good readability */
+  color: #2c1810; /* Dark brown that complements blanchedalmond */
+  text-align: center;
+  font-family: 'Arial', 'Helvetica', sans-serif; /* Clean, readable font */
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8); /* Subtle light text shadow for contrast */
+  padding: 1.5rem 2rem; /* Add some padding for better spacing */
+  border-radius: 20px; /* Optional: rounded corners for a modern look */
+
 }
 
-.laptop-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.thedeveloper {
+  position: absolute;
+  text-align: end;
+
+
 }
+
 
 #home {
   position: absolute;
@@ -127,30 +142,34 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
-
-#YouTube {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  pointer-events: none;
-  border: none;
 }
 
 /* Content section */
-.content-section {
-  padding: 4rem 2rem 2rem;
+
+.thedeveloper {
+  position: absolute;
   max-width: 1200px;
   margin: 0 auto;
-  background: white;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  outline: hidden;
+  background-blend-mode: hue;
+  background: rgb(142, 134, 125);
+
 }
 
-.content-section h2 {
-  font-size: 2.5rem;
-  color: #2c3e50;
+.page2 h2 {
+  font-size: 3rem;
+  color: #411e01;
   text-align: center;
-  margin-bottom: 1rem;
   letter-spacing: 2px;
-}
+  background: rgb(142, 134, 125);
+  padding: 4rem 4rem 4rem;
+  width: 100%;
+
+} 
+
 
 .content-section h3 {
   font-size: 1.8rem;
